@@ -28,7 +28,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(expressSession({
         resave : false,
         saveUninitialized : false,
-        secret: process.env.EXPRESS_SESSION_SECRET||'your-secret-key',
+        secret: process.env.EXPRESS_SESSION_SECRET,
     })
 );
 app.use(flash());
